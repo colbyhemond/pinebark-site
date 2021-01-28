@@ -20,7 +20,6 @@ module.exports = {
           '/contact': { page: '/contact' },
           '/faq': { page: '/faq' },
           'index': { page: '/index' },
-          '/gallery': { page: '/gallery' },
           '/services': { page: '/services' }
         }
       }
