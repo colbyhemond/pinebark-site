@@ -11,8 +11,14 @@
     --ch-button: #ffa500;
     --ch-button-hover: #fabc4a;
     --black-ch: #121212;
-    --white-ch: #fff;
+    --white-ch: #eee;
     --teal-ch: #55ffee;
+    --green-ch: #8f9c5c;
+}
+
+html {
+    background-color: var(--white-ch);
+    color: var(--black-ch);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,23 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .jumbotron {
-    box-shadow: 0px 0px 500px #0e0e0e inset ;
-}
-
-main {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: var(--black-ch);
-    background: rgb(18,18,18);
-    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(34,34,34,1) 100%);   
-    color: var(--white-ch);
-    color: #ddd
+    /* box-shadow: 0px 0px 500px #0e0e0e inset ; */
 }
 
 nav {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background-color: var(--black-ch);
-    color: var(--white-ch);
-    color: #ddd
+    background-color: var(--white-ch);
+    color: var(--black-ch);
+}
+
+.navbar-brand {
+    width: 80%;
+    max-width: 350px;
+    min-width: 200px;
+    margin: 0 !important;
 }
 
 .img-align-left {
@@ -59,7 +62,7 @@ nav {
 
 .container > div {
     padding-top: 2em !important;
-    color: var(--white-ch);
+    color: var(--black-ch);
     width: 100%;
     border-top: 5px solid var(--white-ch);
     border-bottom: 5px solid var(--white-ch);

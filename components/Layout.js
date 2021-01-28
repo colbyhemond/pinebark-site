@@ -7,7 +7,7 @@ import Footer from './Footer'
 
 import navButtons from '../config/buttons'
 
-export const siteTitle = 'The Hair Code Salon'
+export const siteTitle = 'Pine Bark Boarding'
 
 export default function Layout({ children, home, title }) {
     return (
@@ -30,21 +30,27 @@ export default function Layout({ children, home, title }) {
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>{title} - { siteTitle }</title>
         </Head>
-        <NavBar navButtons={navButtons} className='body' />
-        <div className="social">
+        <div className="mx-lg-5 site">
+   
+          <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
+  
+        {/* <div className="social">
           <a href="">
-              <img src="./assets/social/facebook.svg"></img>
-            </a>
-            <a href="">
-              <img src="./assets/social/twitter.svg"></img>
-            </a>
-            <a href="">
-              <img src="./assets/social/instagram.svg"></img>
-            </a>
-          </div>
-        <main className={styles.main}>{children}</main>
+            <img src="./assets/social/facebook.svg"></img>
+          </a>
+          <a href="">
+            <img src="./assets/social/twitter.svg"></img>
+          </a>
+          <a href="">
+            <img src="./assets/social/instagram.svg"></img>
+          </a>
+        </div> */}
 
-        <Footer navButtons={navButtons} className='body' />
+        <main>{children}</main>
+    
+          <Footer navButtons={navButtons} className='body' siteTitle={ siteTitle } />
+    
+        </div>
         <style type="text/css"> {`
 
         .social {
@@ -62,6 +68,10 @@ export default function Layout({ children, home, title }) {
 
           .social img:hover {
             filter: drop-shadow(0 0px 2px pink) saturate(2);
+          }
+
+          .site {
+            box-shadow: 0 0 25px #555;
           }
 
         `}</style>

@@ -18,7 +18,7 @@ const Footer = props => (
 
         </Navbar>
         <div className="d-flex justify-content-center py-2">
-            Copyright { year } The Hair Code
+            Copyright { year } { props.siteTitle }
         </div>
     
     </div>

@@ -7,8 +7,6 @@ faqs:
     answer: 3 easy options! Booksy, Call or Message! Booksy is our scheduling app, you can download and book here. Our phone number is 231-620-9251. Use our Contact form to send a message!
   - question: Do you cut kids hair?
     answer: Absolutely! They brighten our day!
-img1: /img/globe_cookie.jpg
-img2: /img/airplane_cookie.jpg
-img3: /img/suitcase_cookie.jpg
+
 ---
 

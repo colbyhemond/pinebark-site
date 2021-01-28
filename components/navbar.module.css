@@ -1,25 +1,28 @@
 .navbar {
-    box-shadow: 0 5px 20px black;
-    background: rgb(18,18,18);
-    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(51,51,51,1) 100%);
+    background: #8f9c5c;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .logo {
-    padding: 0vh 5vh;
-    width: 20vh;
+    padding: 1vh 5vh;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
 }
 
 .navbartoggler {
     background-color: var(--white-ch) !important;
+    align-self: center;
 }
 
 .button {
     padding: 0 10px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0);
     font-weight: bold;
+    background-color: rgb(0,0,0, 0)
 }
 
 .button:hover {
-    border-bottom: 3px solid var(--teal-ch);
-    
+    background-color: var(--white-ch);
+    box-shadow: 0 0 2px #222 inset;
 }
