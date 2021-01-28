@@ -11,7 +11,7 @@
     --ch-button: #ffa500;
     --ch-button-hover: #fabc4a;
     --black-ch: #121212;
-    --white-ch: #eee;
+    --white-ch: #f7f7f7;
     --teal-ch: #55ffee;
     --green-ch: #8f9c5c;
 }
@@ -88,5 +88,12 @@ nav {
     border: 3px solid var(--teal-ch) !important;
     /* box-shadow: 0 0 5px #555 inset; */
     box-shadow: none;
+}
+
+input, textarea {
+    border: none;
+    box-shadow: 0 0px 3px #ccc inset;
+    border-radius: 5px;
+    background-color: var(--white-ch) !important;
 }
 
