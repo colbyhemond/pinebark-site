@@ -2,7 +2,6 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as ServicesContent } from '../content/services.md';
 import Layout from '../components/Layout'
-import ImgRow from '../components/ImgRow'
 
 
 export default class Home extends Component {
@@ -41,10 +40,6 @@ export default class Home extends Component {
 
         <style type="text/css"> {
           ` 
-          
-          .img-align-right {
-            max-width: 300px;
-          }
 
           .container {
             max-width: 700px;

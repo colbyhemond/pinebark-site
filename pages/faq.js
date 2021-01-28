@@ -10,10 +10,7 @@ export default class Home extends Component {
   render() {
     let { 
       title,
-      faqs,
-      img1,
-      img2,
-      img3
+      faqs
     } = attributes;
     return (
       <>
@@ -38,12 +35,7 @@ export default class Home extends Component {
       
 
         <style type="text/css"> {
-          ` 
-          
-          .img-align-right {
-            max-width: 300px;
-          }
-
+          `
           .container {
             max-width: 700px;
           }

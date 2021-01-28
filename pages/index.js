@@ -14,10 +14,7 @@ export default class Home extends Component {
     
     let { 
       title, 
-      jumbotron, jumboText1, jumboText2,
-      card1Img, card1Title, card1Text, card1ButtonText, buttonLink1, 
-      card2Img, card2Title, card2Text, card2ButtonText, buttonLink2,
-      card3Img, card3Title, card3Text, card3ButtonText, buttonLink3
+      jumbotron, jumboText1, jumboText2
      } = attributes;
     return (
       <>

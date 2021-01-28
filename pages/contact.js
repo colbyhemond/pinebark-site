@@ -3,14 +3,10 @@ import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/contact.md';
 import Layout from '../components/Layout'
 import ContactForm from '../components/ContactForm'
-import ImgRow from '../components/ImgRow'
 
 export default class Home extends Component {
   render() {
-    let { title,
-          img1,
-          img2,
-          img3 } = attributes;
+    let { title } = attributes;
     return (
       <>
         <Layout title={title}>

@@ -2,35 +2,29 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as AboutContent } from '../content/about.md';
 import Layout from '../components/Layout'
-import ImgRow from '../components/ImgRow'
 
 
 export default class Home extends Component {
   render() {
     let { 
       title, 
-      stylists
+      employees
     } = attributes;
     return (
       <>
         <Layout title={title}>
           <div className="container">
             <h1>{ title }</h1>
-            {/* <div className="body">
-              <div className="col-12">
-                <AboutContent />
-              </div>
-            </div> */}
             <div className="body">
-                { stylists.map( stylist => 
-                  <div key={stylist.name} className="row stylistRow">
-                    <div className='col-12 col-sm-5 stylistImg'>
-                      <img key={stylist.name} src={stylist.image}></img>
+                { employees.map( employee => 
+                  <div key={employee.name} className="row employeeRow">
+                    <div className='col-12 col-sm-5 employeeImg'>
+                      <img key={employee.name} src={employee.image}></img>
                     </div>
                     <div className='col-12 col-sm-7'>
-                      <h2 key={stylist.name} className="">{stylist.name}</h2>
-                      <p key={stylist.name}>{stylist.title}</p>
-                      <p key={stylist.name}>{stylist.about}</p>
+                      <h2 key={employee.name} className="">{employee.name}</h2>
+                      <p key={employee.name}>{employee.title}</p>
+                      <p key={employee.name}>{employee.about}</p>
                     </div>
                   </div>
                 )}
@@ -39,19 +33,14 @@ export default class Home extends Component {
         </Layout>
 
         <style type="text/css"> {
-          ` 
-          // .img {
-          //   max-width: 300px;
-          //   width: 100%;
-          //   height: auto;
-          // }
+          `
 
-          .stylistImg img {
+          .employeeImg img {
             height: 300px;
             width: auto;
           }
 
-          .stylistRow {
+          .employeeRow {
             min-height: 400px
           }
 
