@@ -42,12 +42,17 @@ export default class Home extends Component {
 
           .card-header {
             font-weight: bold;
-            color: var(--white-ch);
-            border-bottom: 3px solid rgb(0,0,0,0);
+            color: var(--black-ch);
+            background-color: var(--green-ch);
+            // background-color: white;
+            border-bottom: 3px solid var(--white-ch);
+
           }
 
           .card-header:hover {
-            border-bottom: 3px solid var(--teal-ch);
+            // border-bottom: 3px solid var(--white-ch);
+            border-left: 15px solid var(--white-ch);
+            transform: scale(1.01);
           }
 
           .card {
@@ -60,7 +65,7 @@ export default class Home extends Component {
           .card-body {
             background-color: var(--white-ch);
             color: var(--black-ch);
-            box-shadow: 0 5px 20px var(--black-ch) inset;
+            // box-shadow: 0 5px 20px var(--black-ch) inset;
             
           }
           

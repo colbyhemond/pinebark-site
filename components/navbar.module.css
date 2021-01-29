@@ -2,13 +2,14 @@
     background: #8f9c5c;
     display: flex;
     flex-wrap: wrap;
+    color: var(--white-ch)
 }
 
 .logo {
     padding: 1vh 5vh;
     width: 100%;
     height: auto;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .navbartoggler {
@@ -19,10 +20,13 @@
 .button {
     padding: 0 10px;
     font-weight: bold;
-    background-color: rgb(0,0,0, 0)
+    background-color: rgb(0,0,0, 0);
+    border: 5px solid var(--green-ch);
 }
 
 .button:hover {
-    background-color: var(--white-ch);
-    box-shadow: 0 0 2px #222 inset;
+    /* background-color: rgb(0,0,0, 0.1); */
+    transform: rotate(-3deg);
+    border: 5px solid var(--white-ch);
+    box-shadow: 0 0 5px rgb(19, 36, 7);
 }

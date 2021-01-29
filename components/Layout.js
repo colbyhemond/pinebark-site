@@ -56,7 +56,7 @@ export default function Layout({ children, home, title }) {
         .social {
             background-color: #ddd;
             color: black;
-            text-align: center;
+            // text-align: center;
             padding: 10px 0;
           }
 
