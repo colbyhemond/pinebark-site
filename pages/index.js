@@ -66,7 +66,7 @@ export default class Home extends Component {
             width: 100%;
             height: auto;
             max-width: 300px;
-            transition: box-shadow 0.2s;
+            transition: box-shadow 0.2s, transform 0.2s;
             padding: 15px;
             display: flex;
           }
@@ -87,6 +87,7 @@ export default class Home extends Component {
             width: 100%;
             margin: auto 0 auto 0;
             font-size: 18pt;
+            font-family: 'Arvo', serif;
           }
           
           `

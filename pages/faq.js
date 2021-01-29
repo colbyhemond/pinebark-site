@@ -42,6 +42,7 @@ export default class Home extends Component {
 
           .card-header {
             font-weight: bold;
+            font-family: var(--font-primary), serif;
             color: var(--black-ch);
             background-color: var(--green-ch);
             // background-color: white;
@@ -66,6 +67,7 @@ export default class Home extends Component {
             background-color: var(--white-ch);
             color: var(--black-ch);
             // box-shadow: 0 5px 20px var(--black-ch) inset;
+            font-family: 'Raleway', sans-serif;
             
           }
           

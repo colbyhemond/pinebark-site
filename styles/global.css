@@ -12,17 +12,24 @@
     --white-ch: #f7f7f7;
     --teal-ch: #55ffee;
     --green-ch: #8f9c5c;
+    --font-primary: 'Arvo', serif !important;
+    --font-secondary: 'Raleway', serif !important;
 }
 
 html {
     background-color: var(--white-ch);
     color: var(--black-ch);
     /* overflow-x: hidden !important; */
+    font-family: 'Raleway', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6, nav, .btn {
     font-family: 'Arvo', serif !important;
     /* text-align: center; */
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron h1 {
@@ -68,6 +75,7 @@ h1, h2, h3, h4, h5, h6, nav, .btn {
     max-width: 175px;
     font-weight: bold !important;
     color:var(--white-ch) !important;
+    transition: box-shadow 0.2s, transform 0.2s !important;
 }
 
 .btn:hover {
