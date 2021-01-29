@@ -86,6 +86,7 @@ export default class Home extends Component {
             text-align: left;
             width: 100%;
             margin: auto 0 auto 0;
+            font-size: 18pt;
           }
           
           `
