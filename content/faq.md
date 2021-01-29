@@ -1,11 +1,11 @@
 ---
 title: Frequently Asked Questions
 faqs:
-  - question: question
+  - question: question 1
     answer: answer
-  - question: question
+  - question: question 2
     answer: answer
-  - question: question
+  - question: question 3
     answer: answer
 
 ---
