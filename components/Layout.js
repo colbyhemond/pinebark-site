@@ -34,44 +34,26 @@ export default function Layout({ children, home, title }) {
    
           <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
   
-        {/* <div className="social">
-          <a href="">
-            <img src="./assets/social/facebook.svg"></img>
-          </a>
-          <a href="">
-            <img src="./assets/social/twitter.svg"></img>
-          </a>
-          <a href="">
-            <img src="./assets/social/instagram.svg"></img>
-          </a>
-        </div> */}
+        
 
         <main>{children}</main>
     
-          <Footer navButtons={navButtons} className='body' siteTitle={ siteTitle } />
+          <Footer navButtons={navButtons} className="footer" siteTitle={ siteTitle } />
     
         </div>
         <style type="text/css"> {`
 
-        .social {
-            background-color: #ddd;
-            color: black;
-            // text-align: center;
-            padding: 10px 0;
-          }
-
-          .social img {
-            max-height: 25px;
-            margin: 0 15px;
-            filter: drop-shadow(0px 3px 2px grey)
-          }
-
-          .social img:hover {
-            filter: drop-shadow(0 0px 2px pink) saturate(2);
-          }
-
           .site {
             box-shadow: 0 0 25px #555;
+          }
+
+          main {
+            margin: 5em 0;
+          }
+
+          .footer {
+            background-color: var(--black-ch) !important;
+            padding-top: 50px;
           }
 
         `}</style>

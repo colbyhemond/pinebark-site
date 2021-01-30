@@ -43,7 +43,7 @@ export default class Home extends Component {
           .card-header {
             font-weight: bold;
             font-family: var(--font-primary), serif;
-            color: var(--black-ch);
+            color: var(--white-ch);
             background-color: var(--green-ch);
             // background-color: white;
             border-bottom: 3px solid var(--white-ch);
