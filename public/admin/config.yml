@@ -90,4 +90,4 @@ collections:
           widget: "list"
           fields:
             - {label: Question, name: question, widget: text, default: "[write the question here]"}
-            - {label: Answer, name: answer, widget: text, default: "[write the answer here]"}
+            - {label: Answer, name: answer, widget: markdown, default: "[write the answer here]"}

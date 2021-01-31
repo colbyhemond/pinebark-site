@@ -16,7 +16,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-                {services.map( service => 
+                {/* {services.map( service => 
                   <div key={service.service} className="row">
                     <div className='col d-flex  align-self-center justify-content-end'>
                       <h2 key={service.service} className="">{service.service}</h2>
@@ -31,7 +31,8 @@ export default class Home extends Component {
              
                     
            
-                )}
+                )} */}
+                <ServicesContent />
             </div>
            
           </div>
@@ -44,6 +45,8 @@ export default class Home extends Component {
           .container {
             max-width: 700px;
           }
+
+          
           
           `
         }
