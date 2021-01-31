@@ -87,7 +87,7 @@ export default class Home extends Component {
             width: 100%;
             margin: auto 0 auto 0;
             font-size: 18pt;
-            font-family: 'Arvo', serif;
+            font-family: var(--font-primary), serif;
           }
           
           `

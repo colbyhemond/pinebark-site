@@ -10,6 +10,9 @@ export default class Home extends Component {
       title, 
       services
     } = attributes;
+    // console.log(attributes);
+    // console.log(ServicesContent);
+
     return (
       <>
         <Layout title={title}>

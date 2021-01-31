@@ -4,7 +4,9 @@ import { attributes, react as HomeContent } from '../content/faq.md';
 import Layout from '../components/Layout'
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
-import ImgRow from '../components/ImgRow'
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
+
 
 export default class Home extends Component {
   render() {
@@ -24,7 +26,7 @@ export default class Home extends Component {
                   {faq.question}
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={faq.question}>
-                  <Card.Body>{faq.answer}</Card.Body>
+                  <Card.Body><ReactMarkdown plugins={[gfm]} children={faq.answer}/></Card.Body>
                 </Accordion.Collapse>
               </Card>
               )}
