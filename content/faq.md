@@ -9,21 +9,6 @@ faqs:
   - question: Do you have vaccination requirements?
     answer: Yes, for the health and safety of all dogs.
 
-      - Rabies
-
-      - Distemper
-
-      - Parvovirus
-
-      - Bordatella
-
-      Distemper, Hepatitis, Parvo, and Parainfluenza might be listed as DHPP or DHLLPP on your dog's medical records.
-      
-
-      Bordatella - Helps prevent some strains of kennel cough. The vaccine does not prevent against all strains, and just like the human flu, there is a risk. 
-    
-
-
       * Rabies
 
       * Distemper
@@ -42,6 +27,5 @@ faqs:
       Bordetella - Helps prevent some strains of kennel cough. The vaccine does
       not prevent against all strains, and just like the human flu, there is a
       risk.
-    question: Do you have vaccination requirements?
 ---
 
