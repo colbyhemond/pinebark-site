@@ -43,6 +43,7 @@ body, p {
 
 .container-primary {
     background-color: var(--green-ch) !important;
+    padding: 30px 0;
 }
 
 .img-align-left {

@@ -7,29 +7,38 @@ import Card from 'react-bootstrap/Card'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
+let eventKey = 1;
+function incrementKey() {
+  eventKey++;
+  return
+}
 
 export default class Home extends Component {
+  
   render() {
     let { 
       title,
       faqs
     } = attributes;
+    
     return (
       <>
         <Layout title={title}>
           <div className="container body">
             <h1>{title}</h1>
-            <Accordion>
+            <Accordion defaultActiveKey="1">
               {faqs.map( faq =>
               <Card key={faq.question}>
-                <Accordion.Toggle as={Card.Header} eventKey={faq.question}>
+                <Accordion.Toggle as={Card.Header} eventKey={eventKey}>
                   {faq.question}
                 </Accordion.Toggle>
-                <Accordion.Collapse eventKey={faq.question}>
+                <Accordion.Collapse eventKey={eventKey}>
                   <Card.Body><ReactMarkdown plugins={[gfm]} children={faq.answer}/></Card.Body>
                 </Accordion.Collapse>
+              {incrementKey()}
               </Card>
               )}
+             
             </Accordion>
             
           </div>

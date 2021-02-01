@@ -6,6 +6,7 @@
     padding: 2vh 3vh;
     height: 100%;
     cursor: pointer;
+
 }
 
 .Icon {
@@ -14,5 +15,5 @@
 
 .Label {
     font-size: 14px;
-    text-transform: capitalize;
+    color: var(--white-ch);
 }

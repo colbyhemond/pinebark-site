@@ -2,6 +2,8 @@ import Head from "next/head"
 import { Component } from 'react'
 import { attributes, react as ServicesContent } from '../content/services.md';
 import Layout from '../components/Layout'
+import ReactMarkdown from 'react-markdown'
+import gfm from 'remark-gfm'
 
 
 export default class Home extends Component {
@@ -35,7 +37,9 @@ export default class Home extends Component {
                     
            
                 )} */}
+                
                 <ServicesContent />
+                
             </div>
            
           </div>

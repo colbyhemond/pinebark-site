@@ -4,10 +4,10 @@ import styles from "./navbutton.module.css";
 
 const NavButton = props => (
   <Link href={props.path}>
-    <div className={styles.NavButton}>
+    <a className={styles.NavButton}>
       <div className={styles.Icon}>{props.icon}</div>
       <span className={styles.Label}>{props.label}</span>
-    </div>
+    </a>
   </Link>
 );
 

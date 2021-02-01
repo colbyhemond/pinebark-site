@@ -30,6 +30,14 @@ collections:
               multiple: false
         - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
         - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string", required: false }
+        - label: "Reviews"
+          name: "reviews"
+          collapsed: false
+          widget: "list"
+          fields:
+            - {label: Quote, name: quote, widget: text }
+            - {label: Client, name: client, widget: string }
+            - {label: Location, name: location, widget: string, required: false }
         
     - label: "About"
       name: "about"

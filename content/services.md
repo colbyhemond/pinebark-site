@@ -21,6 +21,12 @@ Ammenities:
  - Walks
  - Playtime
 
+Vaccine Requirements:
+ - Rabies
+ - Distemper
+ - Parvovirus
+ - Bordetella
+
 ## Grooming 
 
 Pricing: Varies based on coat condition, size of the dog, and behavior.

@@ -3,7 +3,7 @@
 const Social = props => (
     <>
     <div className="social">
-        <a href="">
+        <a href="https://www.facebook.com/PineBarkBoarding">
             <img src="./assets/social/facebook_box_white.svg"></img>
         </a>
         {/* <a href="">
@@ -13,7 +13,7 @@ const Social = props => (
             <img src="./assets/social/instagram.svg"></img>
         </a> */}
     </div>
-    
+
     <style type="text/css"> {
           `
       .social {

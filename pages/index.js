@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
+import ImgRow from '../components/ImgRow'
 
 import navButtons from "../config/buttons";
 
@@ -13,7 +14,8 @@ export default class Home extends Component {
   render() {
     
     let { 
-      title
+      title,
+      reviews
      } = attributes;
     return (
       <>
@@ -26,7 +28,7 @@ export default class Home extends Component {
               <div className="col-12 d-flex justify-content-center">
                 <div className="icon">
                   <div className="col-3">
-                    <img src="./assets/dog_house.svg"></img>
+                    <img src="./assets/icons/dog_house.svg"></img>
                   </div>
                   <div className="col-9">
                     <p className="icon-title">Boarding</p>
@@ -35,8 +37,8 @@ export default class Home extends Component {
               </div>
               <div className="col-12 d-flex justify-content-center">
                 <div className="icon">
-                <div className="col-3">
-                    <img src="./assets/bathtub.svg"></img>
+                  <div className="col-3">
+                    <img src="./assets/icons/bathtub.svg"></img>
                   </div>
                   <div className="col-9">
                     <p className="icon-title">Grooming</p>
@@ -47,9 +49,28 @@ export default class Home extends Component {
           </div>
           <div className="container-fluid container-primary">
             <div className="container">
-              <div className="row">
+              <div className="row-fluid">
+                <div className="col mb-1">
+                <h3 className="text-center">Look who recently came to visit!</h3>
+                  <ImgRow img1="./assets/images/IMG_4096.jpg" img2="./assets/images/IMG_1728.jpg"
+                    img3="./assets/images/IMG_5151.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid container-secondary">
+            <div className="container">
+              <div className="row-fluid">
                 <div className="col">
-                  <h3>Test</h3>
+                  <h3 className="text-center">Read some of our 5 paw reviews!</h3>
+                  <div className="d-flex flex-column">
+                    {reviews.map( review =>
+                    <div className="review">
+                      <p key={review.client}>"{review.quote}"</p>
+                      <h6>- <strong>{review.client}</strong>{ (review.location ? `, ${review.location}` : ``)}</h6>
+                    </div>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,6 +109,10 @@ export default class Home extends Component {
             margin: auto 0 auto 0;
             font-size: 18pt;
             font-family: var(--font-primary), serif;
+          }
+
+          .review {
+            margin: 40px 0 0 0;
           }
           
           `
