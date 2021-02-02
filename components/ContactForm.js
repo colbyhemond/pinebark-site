@@ -7,19 +7,19 @@ const ContactForm = props => (
                 <label htmlFor="name">
                     Name
                 </label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" required />
             </p>
             <p>
                 <label htmlFor="email">
                     Email
                 </label> 
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
             </p>
             <p>
                 <label htmlFor="message">
                     Message
                 </label>
-                <textarea name="message" id="message" rows="4"></textarea>
+                <textarea name="message" id="message" rows="4" required></textarea>
             </p>
             <p>
                 <button type="submit" className="d-flex mx-auto btn justify-content-center">Send</button>
