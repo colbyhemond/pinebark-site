@@ -97,3 +97,6 @@ input, textarea {
     background-color: var(--white-ch) !important;
 }
 
+a {
+    color: inherit !important;
+}

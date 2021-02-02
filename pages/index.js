@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
 import Layout from '../components/Layout'
@@ -26,24 +27,33 @@ export default class Home extends Component {
             </div>
             <div className=" col-12 col-md-5">
               <div className="col-12 d-flex justify-content-center">
-                <div className="icon">
-                  <div className="col-3">
-                    <img src="./assets/icons/dog_house.svg"></img>
+                <Link href="/services/#boarding">
+                  <a>
+                  <div className="icon">
+                    <div className="col-3">
+                      <img src="./assets/icons/dog_house.svg"></img>
+                    </div>
+                    <div className="col-9" >
+                      <div className="icon-title">Boarding »</div>
+                      
+                    </div>
                   </div>
-                  <div className="col-9">
-                    <p className="icon-title">Boarding</p>
-                  </div>
-                </div>
+                </a>
+                </Link>
               </div>
               <div className="col-12 d-flex justify-content-center">
-                <div className="icon">
-                  <div className="col-3">
-                    <img src="./assets/icons/bathtub.svg"></img>
+                <Link href="/services/#grooming">
+                <a>
+                  <div className="icon">
+                    <div className="col-3">
+                      <img src="./assets/icons/bathtub.svg"></img>
+                    </div>
+                    <div className="col-9">
+                      <div className="icon-title">Grooming »</div>
+                    </div>
                   </div>
-                  <div className="col-9">
-                    <p className="icon-title">Grooming</p>
-                  </div>
-                </div>
+                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -51,7 +61,7 @@ export default class Home extends Component {
             <div className="container">
               <div className="row-fluid">
                 <div className="col mb-1">
-                <h3 className="text-center">Look who recently came to visit!</h3>
+                  <h3 className="text-center">Look who recently came to visit!</h3>
                   <ImgRow img1="./assets/images/IMG_4096.jpg" img2="./assets/images/IMG_1728.jpg"
                     img3="./assets/images/IMG_5151.jpg" />
                 </div>
@@ -80,22 +90,28 @@ export default class Home extends Component {
         
         <style type="text/css"> {
           `
-          .icon {
+          a .icon {
             margin: 10px;
-            border: 1px solid lightgrey;
-            border-radius: 3%;
-            width: 100%;
+            border: 3px solid var(--white-ch);
+            border-radius: 5px;
+            background-color: var(--green-ch);
+            color: white;
+            width: 250px;
             height: auto;
             max-width: 300px;
             transition: box-shadow 0.2s, transform 0.2s;
-            padding: 15px;
+            padding: 15px 5px;
             display: flex;
+            box-shadow: 0 0 5px grey;
+            
           }
 
-          .icon:hover {
-            box-shadow: 0 0 15px lightgrey;
+          a .icon:hover {
+            box-shadow: 0 0 15px grey;
+            text-decoration-line: underline;
+            text-decoration-color: white;
             transform: rotate(3deg);
-            background-color: #eee
+            // background-color: #eee
           }
 
           .icon img {
@@ -113,6 +129,8 @@ export default class Home extends Component {
 
           .review {
             margin: 40px 0 0 0;
+            border-left: 5px solid var(--green-ch);
+            padding-left: 15px;
           }
           
           `

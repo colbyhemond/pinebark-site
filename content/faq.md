@@ -4,8 +4,8 @@ faqs:
   - answer: >-
       We recommend that you bring your dog's food, to prevent them from getting
       sick from sudden changes in diet. A good leash and collar for daily walks.
-    question: Should I bring anything for my dog’s Stay?
-  - answer: 'Yes, we are happy to administer pets'' medications free of charge.'
+    question: Should I bring anything for my dog’s stay?
+  - answer: "Yes, we are happy to administer your pet's medications, free of charge."
     question: Can you provide my dog with their medications?
   - answer: >-
       Yes, we require the following vaccines for the health and safety of all

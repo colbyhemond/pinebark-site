@@ -49,31 +49,36 @@ const Footer = props => (
         <div className="container-fluid px-5">
             <div className="row">
                     <div className="col-12 col-sm-6 col-md-3 ">
-                        <div className="row">
+                        <div className="row justify-content-center my-3">
+                            <p>
                             <Social />
+                            </p>
                         </div>
-                        {/* <div className="row">
-                            <Social />
-                        </div> */}
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 d-flex flex-column justify-content-center">
+                    <div className="col-12 col-sm-6 col-md-3 my-3">
                         <div className="row">
-                        <p>Hours:<br/>
-                            Mon - Sat 8:00am - 6:00pm<br/>
-                            Sun 8:00am - 4:00pm</p>
-                        </div>
+                            <p>Hours:<br/>
+                                Mon-Sat 8:00am - 6:00pm<br/>
+                                Sun 8:00am - 4:00pm</p>
+                            </div>
+                            <address>
                         <div className="row">
-               
-                        <a href="maps:https://maps.google.com/?q=8225+N+Woodbridge+Rd+Wheeler,+MI">8225 N Woodbridge Rd.<br/>
-                            Wheeler, MI 48662</a>
+                            <p>
+                                Pine Bark Boarding and Grooming<br/>
                          
+                            <a href="maps:https://maps.google.com/?q=8225+N+Woodbridge+Rd+Wheeler,+MI">8225 N Woodbridge Rd.<br/>
+                            Wheeler, MI 48662</a>
+                            </p>
                         </div>
-
                         <div className="row">
-                            <a href="tel:989-948-4714">(989) 948-4714</a>
+                            <p>
+                            <a href="tel:989-948-4714">(989) 948-4714</a><br/>
+                            <a href="mail:pinebarkboarding@gmail.com">PineBarkBoarding@Gmail.com</a>
+                            </p>
                         </div>
+                        </address>
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 my-5">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13456.07649118908!2d-84.41776522622241!3d43.41343622187014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88223700a836a093%3A0xa957406657c7ef83!2sPine%20Bark%20Boarding!5e0!3m2!1sen!2sus!4v1612041867683!5m2!1sen!2sus" width="100%" height="250vh"  aria-hidden="false" ></iframe>
                     </div>
             </div>
