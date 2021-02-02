@@ -23,11 +23,12 @@
     background-color: rgb(0,0,0, 0);
     border: 5px solid var(--green-ch);
     transition: box-shadow 0.2s, transform 0.2s;
+    /* align-self: center; */
 }
 
 .button:hover {
     /* background-color: rgb(0,0,0, 0.1); */
-    transform: rotate(-3deg);
+    /* transform: rotate(-3deg); */
     border: 5px solid var(--white-ch);
     box-shadow: 0 0 15px rgb(97, 119, 80);
 }

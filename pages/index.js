@@ -59,9 +59,14 @@ export default class Home extends Component {
           </div>
           <div className="container-fluid container-primary">
             <div className="container">
+              <div className="row">
+                <h2>Pine Bark is...</h2>
+                <p>a retreat for your dog while you are away! Your dog will enjoy nature walks, treats, a big play yard, and an option for a bath before going home.
+                  Our facilities have indoor/outdoor kennels, heat and AC, and a comfy cot in every room!</p>
+              </div>
               <div className="row-fluid">
                 <div className="col mb-1">
-                  <h3 className="text-center">Look who recently came to visit!</h3>
+                  <h3 className="text-center">Look who recently came to stay with us!</h3>
                   <ImgRow img1="./assets/images/IMG_4096.jpg" img2="./assets/images/IMG_1728.jpg"
                     img3="./assets/images/IMG_5151.jpg" />
                 </div>
@@ -75,8 +80,8 @@ export default class Home extends Component {
                   <h3 className="text-center">Read some of our 5 paw reviews!</h3>
                   <div className="d-flex flex-column">
                     {reviews.map( review =>
-                    <div className="review">
-                      <p key={review.client}>"{review.quote}"</p>
+                    <div className="review" key={review.client}>
+                      <p>"{review.quote}"</p>
                       <h6>- <strong>{review.client}</strong>{ (review.location ? `, ${review.location}` : ``)}</h6>
                     </div>
                     )}
@@ -84,6 +89,18 @@ export default class Home extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="container-fluid container-secondary">
+          <div className="container">
+              <div className="row-fluid">
+                <div className="col text-center">
+                  <h2>Learn more about us!</h2>
+                  <Link href="/about">
+                    <button className="btn btn-secondary">About Us</button>
+                  </Link>
+                  </div>
+                  </div>
+                  </div>
           </div>
         </Layout>
 

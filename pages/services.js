@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { Component } from 'react'
 import { attributes, react as ServicesContent } from '../content/services.md';
 import Layout from '../components/Layout'
@@ -38,6 +39,18 @@ export default class Home extends Component {
                 
                 <ServicesContent />
                 
+            </div>
+            <div className="container-fluid container-secondary">
+              <div className="container">
+                <div className="row-fluid">
+                  <div className="col text-center">
+                    <h3>Do you have questions?</h3>
+                    <Link href="/faq">
+                    <button className="btn">FAQ</button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
            
           </div>

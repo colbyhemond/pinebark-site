@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Link from "next/link"
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/faq.md';
 import Layout from '../components/Layout'
@@ -41,6 +42,19 @@ export default class Home extends Component {
              
             </Accordion>
             
+          </div>
+
+          <div className="container-fluid container-secondary">
+            <div className="container">
+              <div className="row-fluid">
+                <div className="col text-center">
+                  <h3>Didn't find the answer your were looking for?</h3>
+                  <Link href="/contact">
+                  <button className="btn btn-secondary">Contact Us</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </Layout>
       

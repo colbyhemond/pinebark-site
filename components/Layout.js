@@ -31,20 +31,34 @@ export default function Layout({ children, home, title }) {
         <title>{title} - { siteTitle }</title>
         </Head>
         <div className="mx-lg-5 site">
-   
-          <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
-  
-        
 
-        <main>{children}</main>
-    
+          <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
+
+          {/* <div className="row">
+            <div className="col-1">
+
+            </div>
+            <div className="col-5 text-center">
+              Located in Wheeler, MI.
+            </div>
+            <div className="col-5 text-center">
+              <a href="tel:989-948-4714">(989) 948-4714</a>
+            </div>
+            <div className="col-1">
+
+            </div>
+          </div> */}
+
+          <main>{children}</main>
+
           <Footer navButtons={navButtons} className="footer" siteTitle={ siteTitle } />
-    
+
         </div>
         <style type="text/css"> {`
 
           .site {
             box-shadow: 0 0 25px #555;
+            background-color: var(--white-ch);
           }
 
           main {

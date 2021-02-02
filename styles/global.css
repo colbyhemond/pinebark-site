@@ -43,7 +43,25 @@ body, p {
 
 .container-primary {
     background-color: var(--green-ch) !important;
-    padding: 30px 0;
+    padding: 50px 0;
+    
+}
+
+.container-secondary {
+    background-color: var(--white-ch) !important;
+    padding: 50px 0;
+    
+}
+
+.container-primary p, .container-primary h1, .container-primary h2, 
+.container-primary h3, .container-primary h4, .container-primary h5,
+.container-primary h6 {
+    color: var(--white-ch) !important;
+    
+}
+
+.container-primary p {
+    font-weight: bold;
 }
 
 .img-align-left {
