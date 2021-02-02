@@ -1,7 +1,8 @@
 import styles from './form.module.css'
+import Link from 'next/link';
 
 const ContactForm = props => (
-        <form name="contact" method="POST" className={styles.form} data-netlify="true">
+        <form name="contact" method="POST" action="/success" className={styles.form} data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <p>
                 <label htmlFor="name">
