@@ -18,17 +18,6 @@ export default class Home extends Component {
             
           </div>
         </Layout>
-      
-
-        <style type="text/css"> {
-          ` 
-          
-          
-          
-          `
-        }
-
-        </style>
       </>
     )
   }

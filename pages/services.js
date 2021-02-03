@@ -11,7 +11,8 @@ export default class Home extends Component {
   render() {
     let { 
       title, 
-      services
+      services,
+      faqCTA
     } = attributes;
 
     return (
@@ -20,33 +21,15 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-                {/* {services.map( service => 
-                  <div key={service.service} className="row">
-                    <div className='col d-flex  align-self-center justify-content-end'>
-                      <h2 key={service.service} className="">{service.service}</h2>
-                     
-                    </div>
-                    <h1>\</h1>
-                    <div className='col d-flex align-self-center'>
-                      <h4 key={service.service}>{service.price}</h4>
-                    </div>
-             
-                  </div>
-             
-                    
-           
-                )} */}
-                
                 <ServicesContent />
-                
             </div>
             <div className="container-fluid container-secondary">
               <div className="container">
                 <div className="row-fluid">
                   <div className="col text-center">
-                    <h3>Do you have questions?</h3>
+                    <h3>{faqCTA}</h3>
                     <Link href="/faq">
-                    <button className="btn">FAQ</button>
+                      <button className="btn">FAQ</button>
                     </Link>
                   </div>
                 </div>
@@ -55,21 +38,6 @@ export default class Home extends Component {
            
           </div>
         </Layout>
-        
-
-        <style type="text/css"> {
-          ` 
-
-          .container {
-            max-width: 700px;
-          }
-
-          
-          
-          `
-        }
-
-        </style>
       </>
     )
   }

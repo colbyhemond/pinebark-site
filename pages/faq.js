@@ -19,7 +19,8 @@ export default class Home extends Component {
   render() {
     let { 
       title,
-      faqs
+      faqs,
+      contactCTA
     } = attributes;
     
     return (
@@ -48,7 +49,7 @@ export default class Home extends Component {
             <div className="container">
               <div className="row-fluid">
                 <div className="col text-center">
-                  <h3>Didn't find the answer your were looking for?</h3>
+                  <h3>{contactCTA}</h3>
                   <Link href="/contact">
                   <button className="btn btn-secondary">Contact Us</button>
                   </Link>

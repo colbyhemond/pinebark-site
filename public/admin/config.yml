@@ -1,101 +1,94 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: public/img
-public_folder: img
+media_folder: public/assets/images
+public_folder: assets/images
 collections:
-  - name: "settings"
-    label: "Settings"
+  - name: settings
+    label: Settings
     files:
-      - label: "Style Settings"
-        name: "styleSettings"
-        file: "content/settings.md"
+      - label: Style Settings
+        name: styleSettings
+        file: content/settings.md
         fields:
-          - { label: "Title Font", name: "titleFont", widget: "string" }
-  - name: "pages"
-    label: "Pages"
+          - { label: Title Font, name: titleFont, widget: string }
+  - name: pages
+    label: Pages
     files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
+    - label: Home
+      name: home
+      file: content/home.md
       fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - label: "Jumbotron" 
-          name: "jumbotron"
-          widget: "image"
-          default: ""
-          media_library:
-            config:
-              multiple: false
-        - { label: "Jumtotron Text 1", name: "jumboText1", widget: "string", required: false }
-        - { label: "Jumtotron Text 2", name: "jumboText2", widget: "string", required: false }
-        - label: "Reviews"
-          name: "reviews"
+        - { label: Title, name: title, widget: string}
+        - { label: Tagline, name: tagline, widget: string }
+        - { label: Body, name: body, widget: markdown}
+        - { label: Images Heading, name: imagesHeading, widget: string }
+        - label: Images
+          name: images
+          widget: object 
+          fields:
+            - label: Left Image
+              name: imgLeft
+              widget: object
+              fields:
+                - { label: Image, name: img, widget: image }
+                - { label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Middle Image
+              name: imgMiddle
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Right Image
+              name: mingRight
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
+        - { label: Reviews Heading, name: reviewsHeading, widget: string }
+        - label: Reviews
+          name: reviews
           collapsed: false
-          widget: "list"
+          widget: list
           fields:
             - {label: Quote, name: quote, widget: text }
             - {label: Client, name: client, widget: string }
             - {label: Location, name: location, widget: string, required: false }
+        - { label: About Button Text, name: aboutCTA, widget: string }
         
-    - label: "About"
-      name: "about"
-      file: "content/about.md"
+    - label: About
+      name: about
+      file: content/about.md
       fields:
-        - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", required: false, widget: "markdown"}
-        - label: Stylists
-          name: stylists
+        - { label: Title, name: title, required: false, widget: string}
+        - { label: Body, name: body, required: false, widget: markdown}
+        - { label: Services Button Text, name: servicesCTA, widget: string}
+        
+    - label: Services
+      name: services
+      file: content/services.md
+      fields:
+        - { label: Title, name: title, required: false, widget: string}
+        - { label: Body, name: body, required: false, widget: markdown}
+        - { label: FAQ Button Text, name: faqCTA, widget: string}
+        
+    - label: FAQ
+      name: faq
+      file: content/faq.md
+      fields:
+        - { label: Title, name: title, required: false, widget: string}
+        - { label: Body, name: body, required: false, widget: markdown}
+        - label: Questions and Answers
+          name: faqs
           widget: list
           fields:
-            - { label: Name, name: name, widget: text }
-            - { label: Title, name: title, widget: text }
-            - { label: About, name: about, widget: string }
-            - label: "Image" 
-              name: "image"
-              widget: "image"
-              default: ""
-              media_library:
-                config:
-                  multiple: false
-        
-    - label: "Services"
-      name: "services"
-      file: "content/services.md"
+            - {label: Question, name: question, widget: text, default: [write the question here]}
+            - {label: Answer, name: answer, widget: markdown, default: [write the answer here]}
+        - { label: Contact Button Text, name: contactCTA, widget: string }
+    
+    - label: Contact
+      name: contact
+      file: content/contact.md
       fields:
-        - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", required: false, widget: "markdown"}
-        - label: Services
-          name: services
-          widget: list
-          fields:
-            - { label: Service Name, name: service, widget: text }
-            - { label: Service Price, name: price, widget: text }
-            - { label: Description, name: description, widget: string }
-        
-    - label: "Gallery"
-      name: "gallery"
-      file: "content/gallery.md"
-      fields:
-        - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Message", name: "message", widget: "string"}
-    - label: "Contact"
-      name: "contact"
-      file: "content/contact.md"
-      fields:
-        - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Message", name: "message", widget: "string"}
-        
-    - label: "FAQ"
-      name: "faq"
-      file: "content/faq.md"
-      fields:
-        - { label: "Title", name: "title", required: false, widget: "string"}
-        - { label: "Body", name: "body", required: false, widget: "markdown"}
-        - label: "Questions and Answers"
-          name: "faqs"
-          widget: "list"
-          fields:
-            - {label: Question, name: question, widget: text, default: "[write the question here]"}
-            - {label: Answer, name: answer, widget: markdown, default: "[write the answer here]"}
+        - { label: Title, name: title, required: false, widget: string}
+        - { label: Message, name: message, widget: string}

@@ -16,7 +16,12 @@ export default class Home extends Component {
     
     let { 
       title,
-      reviews
+      tagline,
+      imagesHeading,
+      images,
+      reviewsHeading,
+      reviews,
+      aboutCTA
      } = attributes;
     return (
       <>
@@ -24,7 +29,8 @@ export default class Home extends Component {
           <div className="container container-top d-flex flex-wrap my-5">
             <div className="col-12 col-md-7 align-self-center d-flex justify-content-center">
               {/* <h1>Your dog's home away from home.</h1> */}
-              <h1>Where pets are family.</h1>
+              <h1>{tagline}</h1>
+              
             </div>
             <div className=" col-12 col-md-5">
               <div className="col-12 d-flex justify-content-center">
@@ -61,15 +67,12 @@ export default class Home extends Component {
           <div className="container-fluid container-primary">
             <div className="container">
               <div className="row">
-                <h2>Pine Bark is...</h2>
-                <p>A retreat for your dog while you are away! Your dog will enjoy nature walks, treats, a big play yard, and an option for a bath before going home.
-                  Our facilities have indoor/outdoor kennels, heat and A/C, and a comfy cot in every room!</p>
+                <HomeContent/>
               </div>
               <div className="row-fluid">
                 <div className="col mb-1">
-                  <h3 className="text-center">Look who recently came to stay with us!</h3>
-                  <ImgRow img1="./assets/images/IMG_4096.jpg" img2="./assets/images/IMG_1728.jpg"
-                    img3="./assets/images/IMG_5151.jpg" />
+                  <h3 className="text-center">{imagesHeading}</h3>
+                  <ImgRow images={images} />
                 </div>
               </div>
             </div>
@@ -78,7 +81,7 @@ export default class Home extends Component {
             <div className="container">
               <div className="row-fluid">
                 <div className="col">
-                  <h3 className="text-center">Read some of our 5 paw reviews!</h3>
+                  <h3 className="text-center">{reviewsHeading}</h3>
                   <div className="d-flex flex-column">
                     {reviews.map( review =>
                     <div className="review" key={review.client}>
@@ -95,7 +98,7 @@ export default class Home extends Component {
           <div className="container">
               <div className="row-fluid">
                 <div className="col text-center">
-                  <h2>Learn more about Pine Bark!</h2>
+                    <h2>{aboutCTA}</h2>
                   <Link href="/about">
                     <button className="btn btn-secondary">About Us</button>
                   </Link>
