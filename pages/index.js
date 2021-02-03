@@ -22,8 +22,9 @@ export default class Home extends Component {
       <>
         <Layout home title={title}>
           <div className="container container-top d-flex flex-wrap my-5">
-            <div className="col-12 col-md-7 align-self-center">
-              <h1>Your dog's home away from home.</h1>
+            <div className="col-12 col-md-7 align-self-center d-flex justify-content-center">
+              {/* <h1>Your dog's home away from home.</h1> */}
+              <h1>Where pets are family.</h1>
             </div>
             <div className=" col-12 col-md-5">
               <div className="col-12 d-flex justify-content-center">
@@ -61,8 +62,8 @@ export default class Home extends Component {
             <div className="container">
               <div className="row">
                 <h2>Pine Bark is...</h2>
-                <p>a retreat for your dog while you are away! Your dog will enjoy nature walks, treats, a big play yard, and an option for a bath before going home.
-                  Our facilities have indoor/outdoor kennels, heat and AC, and a comfy cot in every room!</p>
+                <p>A retreat for your dog while you are away! Your dog will enjoy nature walks, treats, a big play yard, and an option for a bath before going home.
+                  Our facilities have indoor/outdoor kennels, heat and A/C, and a comfy cot in every room!</p>
               </div>
               <div className="row-fluid">
                 <div className="col mb-1">
@@ -94,7 +95,7 @@ export default class Home extends Component {
           <div className="container">
               <div className="row-fluid">
                 <div className="col text-center">
-                  <h2>Learn more about us!</h2>
+                  <h2>Learn more about Pine Bark!</h2>
                   <Link href="/about">
                     <button className="btn btn-secondary">About Us</button>
                   </Link>

@@ -5,26 +5,36 @@ services:
     price: '$22'
     description: ''
   - service: "Grooming"
-    price: '$22'
+    price: 'Varies'
     description: ''
   
 
 ---
 ## Boarding
 
-Pricing: $22/night
+Pricing: 
+  - $22/night
+  - 10% multi-pet discount
 
-To ensure our facility is flea free, we will only accept dogs with fleas by administering a Capstar and a Flea bath first.
+All breeds are welcome.
+We do not board females in heat.
+To ensure our facility is flea free, we will only accept dogs with fleas by administering a Capstar and a Flea bath first (see flea services pricing).
 
 Ammenities:
- - In/Out Doggy door
- - Walks
- - Playtime
+ - Large indoor/outdoor runs
+ - Runs large enough to handle multiple dogs from the same household
+ - Comfy Kuranda dog cotts
+ - Heat and A/C
+ - Dog T.V.
+ - Large play yard
+ - Beautiful nature trails for walking
+
+Drop off/Pick Up:
+  - Between 8am - 6pm Monday-Sunday by Appointment.
 
 Vaccine Requirements:
  - Rabies
- - Distemper
- - Parvovirus
+ - Distemper/Parvovirus (DHPP/DHLLPP)
  - Bordetella
 
 ## Grooming 

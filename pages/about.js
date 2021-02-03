@@ -17,7 +17,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-                { employees.map( employee => 
+                {/* { employees.map( employee => 
                   <div key={employee.name} className="row employeeRow">
                     <div className='col-12 col-sm-5 employeeImg'>
                       <img key={employee.name} src={employee.image}></img>
@@ -28,7 +28,12 @@ export default class Home extends Component {
                       <p key={employee.name}>{employee.about}</p>
                     </div>
                   </div>
-                )}
+                )} */}
+                <p>
+                  Pine Bark opened in 2019, as we completed construction on our brand new building. We are a small, family-owned facility, with one goal: making your pet feel at home while you are away.
+                  Pine Bark sits on 10 beautiful acres nestled in the pines of Gratiot county. We believe that by remaining a small facility, we can provide loving one on one care for your furkids. 
+                </p>
+                <p>Where pets are family.</p>
             </div>
           </div>
           <div className="container-fluid container-secondary">

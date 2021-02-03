@@ -6,6 +6,7 @@ import NavBar from './NavBar'
 import Footer from './Footer'
 
 import navButtons from '../config/buttons'
+import Social from './Social'
 
 export const siteTitle = 'Pine Bark Boarding'
 
@@ -33,21 +34,26 @@ export default function Layout({ children, home, title }) {
         <div className="mx-lg-5 site">
 
           <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
+        
+          <div className="container-fluid">
+            <div className="row nav-contact">
+              <div className="col-1">
 
-          {/* <div className="row">
-            <div className="col-1">
+              </div>
+              <div className="col-3 text-center">
+                Located in Wheeler, MI
+              </div>
+              <div className="col-4">
+                <Social />
+              </div>
+              <div className="col-3 text-center">
+                <a href="tel:989-948-4714">(989) 948-4714</a>
+              </div>
+              <div className="col-1">
 
+              </div>
             </div>
-            <div className="col-5 text-center">
-              Located in Wheeler, MI.
-            </div>
-            <div className="col-5 text-center">
-              <a href="tel:989-948-4714">(989) 948-4714</a>
-            </div>
-            <div className="col-1">
-
-            </div>
-          </div> */}
+          </div>
 
           <main>{children}</main>
 
@@ -59,6 +65,12 @@ export default function Layout({ children, home, title }) {
           .site {
             box-shadow: 0 0 25px #555;
             background-color: var(--white-ch);
+          }
+
+          .nav-contact {
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 10px #CCC ;
           }
 
           main {

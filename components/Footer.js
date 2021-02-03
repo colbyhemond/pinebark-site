@@ -66,22 +66,25 @@ const Footer = props => (
                                 Mon-Sat 8:00am - 6:00pm<br/>
                                 Sun 8:00am - 4:00pm</p>
                             </div>
-                            <address>
+                            
                         <div className="row">
+                            <address>
                             <p>
                                 Pine Bark Boarding and Grooming<br/>
                          
                             <a href="maps:https://maps.google.com/?q=8225+N+Woodbridge+Rd+Wheeler,+MI">8225 N Woodbridge Rd.<br/>
                             Wheeler, MI 48662</a>
                             </p>
-                        </div>
-                        <div className="row">
+                       
                             <p>
-                            <a href="tel:989-948-4714">(989) 948-4714</a><br/>
+                            <a href="tel:989-948-4714">(989) 948-4714</a>
+                            </p>
+                            <p>
                             <a href="mail:pinebarkboarding@gmail.com">PineBarkBoarding@Gmail.com</a>
                             </p>
+                            </address>
                         </div>
-                        </address>
+                       
                     </div>
                     <div className="col-12 col-lg-6 my-3">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13456.07649118908!2d-84.41776522622241!3d43.41343622187014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88223700a836a093%3A0xa957406657c7ef83!2sPine%20Bark%20Boarding!5e0!3m2!1sen!2sus!4v1612041867683!5m2!1sen!2sus" width="100%" height="250vh"  aria-hidden="false" ></iframe>
