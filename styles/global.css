@@ -113,3 +113,8 @@ input, textarea {
 a {
     color: inherit !important;
 }
+
+a[href^="tel:"]:before {
+    content: "\1F4DE";
+    margin-right: 0.5em;
+  }

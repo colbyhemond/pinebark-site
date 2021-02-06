@@ -4,8 +4,11 @@ import Link from "next/link";
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Social from "./Social"
+import { attributes } from '../content/settings.md';
 
-const Footer = props => (
+const Footer = props => {
+    let { socialmedia } = attributes
+    return (
     <>
     <div className="tree-row">
         <div className="tree">
@@ -51,7 +54,10 @@ const Footer = props => (
                     <div className="col-12 col-sm-6 col-lg-3 ">
                         <div className="row justify-content-center my-3">
                             <p>
-                            <Social />
+                            <Social dark facebook={{url: socialmedia.facebook}}
+                        // twitter={{url: socialmedia.facebook}}
+                        // instagram={{url: socialmedia.facebook}}
+                        />
                             </p>
                         </div>
                         <div className="row justify-content-center my-3">
@@ -154,7 +160,7 @@ const Footer = props => (
 
     `}</style>
     </>
-);
+    )};
 
 let year = new Date().getFullYear();
 

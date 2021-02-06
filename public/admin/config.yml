@@ -7,11 +7,28 @@ collections:
   - name: settings
     label: Settings
     files:
-      - label: Style Settings
-        name: styleSettings
+      - label: General
+        name: general
         file: content/settings.md
         fields:
-          - { label: Title Font, name: titleFont, widget: string }
+          - label: "Social Media"
+            name: "socialmedia"
+            widget: "object" 
+            fields:
+              - {label: "Facebook", name: "facebook", widget: string, required: false}
+              - {label: "Twitter", name: "twitter", widget: string, required: false}
+              - {label: "Instagram", name: "instagram", widget: string, required: false}
+          - label: "Business Info"
+            name: "businessinfo"
+            widget: "object" 
+            fields:
+              - {label: "Name", name: "name", widget: string, required: false}
+              - {label: "Address Line 1", name: "address1", widget: string, required: false}
+              - {label: "Address Line 2", name: "address2", widget: string, required: false}
+              - {label: "City", name: "city", widget: string, required: false}
+              - {label: "State", name: "state", widget: string, required: false}
+              - {label: "Zip Code", name: "zip", widget: string, required: false}
+              - {label: "Phone", name: "phone", widget: string, required: false, pattern: [((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}, "Must be in format (000) 000-000"], hint: Please enter in format (000) 000-0000}
   - name: pages
     label: Pages
     files:

@@ -1,24 +1,82 @@
 
+let count = 0;
 
-const Social = props => (
+function countProp (prop) {
+  if (prop !== undefined) {
+    count++;
+  }
+  return prop;
+}
+
+const Social = props => {
+  
+  let facebook = countProp(props.facebook);
+  let twitter = countProp(props.twitter);
+  let instagram = countProp(props.instagram);
+  console.log(count);
+  return (
     <>
     <div className="social">
-        <a href="https://www.facebook.com/PineBarkBoarding">
-            <img src="./assets/social/facebook_box_white.svg"></img>
+      { (count == 1) ? <span>Follow us on:</span> : `` }
+      
+      { (!props.dark) ?
+                ( facebook ? 
+                  <a href={facebook.url}>
+                      <img src="./assets/social/facebook.svg" alt="facebook"></img>
+                  </a> 
+                  : null )
+                : ( facebook ? 
+                  <a href={facebook.url}>
+                      <img src="./assets/social/facebook_white.svg" alt="facebook"></img>
+                  </a> 
+                  : null ) }
+
+      { (!props.dark) ?
+                ( twitter ? 
+                  <a href={twitter.url}>
+                      <img src="./assets/social/twitter.svg" alt="twitter"></img>
+                  </a> 
+                  : null )
+                : ( twitter ? 
+                  <a href={twitter.url}>
+                      <img src="./assets/social/twitter_white.svg" alt="twitter"></img>
+                  </a> 
+                  : null ) }
+
+      { (!props.dark) ?
+                ( instagram ? 
+                  <a href={instagram.url}>
+                      <img src="./assets/social/instagram.svg" alt="instagram"></img>
+                  </a> 
+                  : null )
+                : ( instagram ? 
+                  <a href={instagram.url}>
+                      <img src="./assets/social/instagram_white.svg" alt="instagram"></img>
+                  </a> 
+                  : null ) }
+
+
+      {/* { twitter ? 
+        <a href={twitter.url}>
+            <img src="./assets/social/twitter.svg" alt="twitter"></img>
         </a>
-        {/* <a href="">
-            <img src="./assets/social/twitter.svg"></img>
+        : null }
+
+      { instagram ? 
+        <a href={instagram.url}>
+            <img src="./assets/social/instagram.svg" alt="instagram"></img>
         </a>
-        <a href="">
-            <img src="./assets/social/instagram.svg"></img>
-        </a> */}
+        : null } */}
+
     </div>
 
     <style type="text/css"> {
           `
       .social {
-        text-align: center;
-        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
       }
 
       .social img {
@@ -34,6 +92,7 @@ const Social = props => (
     }
     </style>
     </>
-);
+    
+)};
 
 export default Social;

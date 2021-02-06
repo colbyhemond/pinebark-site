@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import NavBar from './NavBar'
 import Footer from './Footer'
+import { attributes } from '../content/settings.md';
 
 import navButtons from '../config/buttons'
 import Social from './Social'
@@ -11,6 +12,7 @@ import Social from './Social'
 export const siteTitle = 'Pine Bark Boarding'
 
 export default function Layout({ children, home, title }) {
+    let { socialmedia } = attributes
     return (
         <>
         <Head>
@@ -36,22 +38,25 @@ export default function Layout({ children, home, title }) {
           <NavBar navButtons={navButtons} logoSrc='./assets/logo_black.svg' />
         
           <div className="container-fluid">
-            <div className="row nav-contact">
-              <div className="col-1">
+            <div className="row nav-contact text-center">
+              {/* <div className="col-md-1 order-md-1">
 
+              </div> */}
+              <div className="col-5 col-sm-4 col-md-4 order-1 order-md-2">
+                <span className="d-none d-sm-inline">Located in </span>Wheeler, MI
               </div>
-              <div className="col-3 text-center">
-                Located in Wheeler, MI
+              <div className="col-12 col-sm-4 col-md-4 order-12 order-md-3 py-2">
+                <Social facebook={{url: socialmedia.facebook}}
+                        // twitter={{url: socialmedia.facebook}}
+                        // instagram={{url: socialmedia.facebook}}
+                        />
               </div>
-              <div className="col-4">
-                <Social />
-              </div>
-              <div className="col-3 text-center">
+              <div className="col-7 col-sm-4 col-md-4 order-2 order-md-4">
                 <a href="tel:989-948-4714">(989) 948-4714</a>
               </div>
-              <div className="col-1">
+              {/* <div className="col-md-1 order-md-5">
 
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -60,6 +65,7 @@ export default function Layout({ children, home, title }) {
           <Footer navButtons={navButtons} className="footer" siteTitle={ siteTitle } />
 
         </div>
+
         <style type="text/css"> {`
 
           .site {
@@ -71,6 +77,8 @@ export default function Layout({ children, home, title }) {
             display: flex;
             align-items: center;
             box-shadow: 0px 0px 10px #CCC ;
+            min-height: 50px;
+            padding: 10px 0;
           }
 
           main {
