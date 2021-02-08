@@ -55,8 +55,8 @@ const Footer = props => {
                         <div className="row justify-content-center my-3">
                             <p>
                             <Social dark facebook={{url: socialmedia.facebook}}
-                        // twitter={{url: socialmedia.facebook}}
-                        // instagram={{url: socialmedia.facebook}}
+                                         twitter={{url: socialmedia.twitter}}
+                                         instagram={{url: socialmedia.instagram}}
                         />
                             </p>
                         </div>

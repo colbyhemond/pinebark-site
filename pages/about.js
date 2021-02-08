@@ -25,8 +25,11 @@ export default class Home extends Component {
                 <div className="row-fluid">
                   <div className="col text-center">
                     <h3>{servicesCTA}</h3>
-                    <Link href="/services">
-                      <button className="btn btn-secondary">Services</button>
+                    <Link href="/boarding">
+                      <button className="btn btn-secondary">Boarding</button>
+                    </Link>
+                    <Link href="/grooming">
+                      <button className="btn btn-secondary">Grooming</button>
                     </Link>
                   </div>
                 </div>

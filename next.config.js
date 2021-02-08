@@ -20,7 +20,8 @@ module.exports = {
           '/contact': { page: '/contact' },
           '/faq': { page: '/faq' },
           'index': { page: '/index' },
-          '/services': { page: '/services' }
+          '/boarding': { page: '/boarding' },
+          '/grooming': { page: '/grooming' }
         }
       }
     //   target: 'serverless'

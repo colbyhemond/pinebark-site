@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import { Component } from 'react'
-import { attributes, react as ServicesContent } from '../content/services.md';
+import { attributes, react as GroomingContent } from '../content/grooming.md';
 import Layout from '../components/Layout'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
@@ -11,7 +11,6 @@ export default class Home extends Component {
   render() {
     let { 
       title, 
-      services,
       faqCTA
     } = attributes;
 
@@ -21,7 +20,7 @@ export default class Home extends Component {
           <div className="container">
             <h1>{ title }</h1>
             <div className="body">
-                <ServicesContent />
+                <GroomingContent />
             </div>
             <div className="container-fluid container-secondary">
               <div className="container">

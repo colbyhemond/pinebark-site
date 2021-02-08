@@ -47,8 +47,8 @@ export default function Layout({ children, home, title }) {
               </div>
               <div className="col-12 col-sm-4 col-md-4 order-12 order-md-3 py-2">
                 <Social facebook={{url: socialmedia.facebook}}
-                        // twitter={{url: socialmedia.facebook}}
-                        // instagram={{url: socialmedia.facebook}}
+                        twitter={{url: socialmedia.twitter}}
+                        instagram={{url: socialmedia.instagram}}
                         />
               </div>
               <div className="col-7 col-sm-4 col-md-4 order-2 order-md-4">

@@ -2,23 +2,28 @@
 const navButtons = [
   {
     label: "Home",
-    path: "/"
+    path: "/",
+    level: 1
   },
   {
     label: "About",
-    path: "/about"
+    path: "/about",
+    level: 1
   },
   {
     label: "Services",
-    path: "/services"
+    path: "/services",
+    level: 1
   },
   {
     label: "FAQ",
-    path: "/faq"
+    path: "/faq",
+    level: 1
   },
   {
     label: "Contact",
-    path: "/contact"
+    path: "/contact",
+    level: 1
   },
   
 ];

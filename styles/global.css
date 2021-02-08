@@ -32,6 +32,10 @@ body, p {
     font-family: var(--font-secondary) !important;
 }
 
+body a, p a {
+    text-decoration: underline;
+}
+
 .jumbotron h1 {
     font-size: 3rem;
 }
@@ -91,6 +95,21 @@ body, p {
     font-weight: bold !important;
     color:var(--white-ch) !important;
     transition: box-shadow 0.2s, transform 0.2s !important;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    background-color: var(--green-ch) !important;
+    border: none !important;
+}
+
+.dropdown-toggle {
+ text-align: center;
+ font-size: 11pt;
+ padding: 2vh 3vh !important;
 }
 
 .btn:hover {

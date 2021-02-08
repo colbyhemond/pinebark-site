@@ -35,7 +35,7 @@ export default class Home extends Component {
             <div className=" col-12 col-md-5">
               <div className="col-12 d-flex justify-content-center">
                 <Link href="/services/#boarding">
-                  <a>
+                  <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
                       <img src="./assets/icons/dog_house.svg"></img>
@@ -50,7 +50,7 @@ export default class Home extends Component {
               </div>
               <div className="col-12 d-flex justify-content-center">
                 <Link href="/services/#grooming">
-                <a>
+                <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
                       <img src="./assets/icons/bathtub.svg"></img>
@@ -132,7 +132,6 @@ export default class Home extends Component {
             text-decoration-line: underline;
             text-decoration-color: white;
             transform: rotate(3deg);
-            // background-color: #eee
           }
 
           .icon img {
@@ -152,6 +151,10 @@ export default class Home extends Component {
             margin: 40px 0 0 0;
             border-left: 5px solid var(--green-ch);
             padding-left: 15px;
+          }
+
+          .no-dec {
+            text-decoration: none;
           }
           
           `
