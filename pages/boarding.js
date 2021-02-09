@@ -6,11 +6,14 @@ import Layout from '../components/Layout'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
 
+import ImgRow from '../components/ImgRow'
+
 
 export default class Home extends Component {
   render() {
     let { 
       title, 
+      images,
       faqCTA
     } = attributes;
 
@@ -21,18 +24,13 @@ export default class Home extends Component {
             <h1>{ title }</h1>
             
             <div className="body">
-                {/* <div className="row"> */}
-                <div className="text">
-                    <BoardingContent />
-               </div>
-                {/* <div className="col-12 col-md-4"> */}
-                    <div className="image">
-                        <img  src="./assets/images/IMG_4461.jpg"></img>
-                    </div>
-                {/* </div> */}
-                {/* </div> */}
+                <BoardingContent />
             </div>
-            
+            <div className="row-fluid">
+              <div className="col mb-1">
+                <ImgRow images={images} />
+              </div>
+            </div>
             <div className="container-fluid container-secondary">
               <div className="container">
                 <div className="row-fluid">

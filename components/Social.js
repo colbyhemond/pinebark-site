@@ -15,7 +15,6 @@ const Social = props => {
   let facebook = countProp(props.facebook);
   let twitter = countProp(props.twitter);
   let instagram = countProp(props.instagram);
-  console.log(count);
   return (
     <>
     <div className="social">

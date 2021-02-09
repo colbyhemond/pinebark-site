@@ -43,7 +43,7 @@ export default function Layout({ children, home, title }) {
 
               </div> */}
               <div className="col-5 col-sm-4 col-md-4 order-1 order-md-2">
-                <span className="d-none d-sm-inline">Located in </span>Wheeler, MI
+                <a href="#location"><span className="d-none d-sm-inline">Located in </span>Wheeler, MI</a>
               </div>
               <div className="col-12 col-sm-4 col-md-4 order-12 order-md-3 py-2">
                 <Social facebook={{url: socialmedia.facebook}}

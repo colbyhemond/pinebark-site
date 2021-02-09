@@ -5,12 +5,14 @@ import { attributes, react as GroomingContent } from '../content/grooming.md';
 import Layout from '../components/Layout'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import ImgRow from '../components/ImgRow'
 
 
 export default class Home extends Component {
   render() {
     let { 
-      title, 
+      title,
+      images, 
       faqCTA
     } = attributes;
 
@@ -21,6 +23,11 @@ export default class Home extends Component {
             <h1>{ title }</h1>
             <div className="body">
                 <GroomingContent />
+            </div>
+            <div className="row-fluid">
+              <div className="col mb-1">
+                <ImgRow images={images} />
+              </div>
             </div>
             <div className="container-fluid container-secondary">
               <div className="container">
