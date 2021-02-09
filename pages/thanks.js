@@ -1,16 +1,9 @@
-import Head from "next/head"
-import Link from "next/link"
 import { Component } from 'react'
-import { attributes, react as AboutContent } from '../content/about.md';
-import Layout from '../components/Layout'
 
 
-export default class Home extends Component {
+export default class Thanks extends Component {
   render() {
-    let { 
-      title, 
-      employees
-    } = attributes;
+
     return (
       <>
 

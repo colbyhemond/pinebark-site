@@ -21,7 +21,8 @@ module.exports = {
           '/faq': { page: '/faq' },
           'index': { page: '/index' },
           '/boarding': { page: '/boarding' },
-          '/grooming': { page: '/grooming' }
+          '/grooming': { page: '/grooming' },
+          '/thanks': { page: '/thanks' }
         }
       }
     //   target: 'serverless'
