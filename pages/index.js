@@ -38,7 +38,7 @@ export default class Home extends Component {
                   <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
-                      <img src="./assets/icons/dog_house.svg"></img>
+                      <img src="./assets/icons/dog_house.svg" alt="dog house icon"></img>
                     </div>
                     <div className="col-9" >
                       <div className="icon-title">Boarding »</div>
@@ -53,7 +53,7 @@ export default class Home extends Component {
                 <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
-                      <img src="./assets/icons/bathtub.svg"></img>
+                      <img src="./assets/icons/bathtub.svg" alt="bathtub icon"></img>
                     </div>
                     <div className="col-9">
                       <div className="icon-title">Grooming »</div>

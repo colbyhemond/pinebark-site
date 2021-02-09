@@ -10,7 +10,7 @@ const NavBar = props => (
   <Navbar className={styles.navbar} expand="lg">
     <Navbar.Brand href="" className="col-9 col-lg-12 text-center">
       <Link href="/">
-        <img className={styles.logo} src={props.logoSrc}></img>
+        <img className={styles.logo} src={props.logoSrc} alt="logo"></img>
       </Link>
     </Navbar.Brand>
     <Navbar.Toggle className={styles.navbartoggler} aria-controls="basic-navbar-nav" />

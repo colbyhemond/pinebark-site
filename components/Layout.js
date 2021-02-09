@@ -30,7 +30,7 @@ export default function Layout({ children, home, title }) {
             )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`} />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          <script rel="preload" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>{title} - { siteTitle }</title>
         </Head>
         <div className="mx-lg-5 site">
@@ -63,7 +63,8 @@ export default function Layout({ children, home, title }) {
           <main>{children}</main>
 
           <Footer navButtons={navButtons} className="footer" siteTitle={ siteTitle } />
-
+          
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </div>
 
         <style type="text/css"> {`

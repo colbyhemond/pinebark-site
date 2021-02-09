@@ -12,40 +12,40 @@ const Footer = props => {
     <>
     <div className="tree-row">
         <div className="tree">
-            <img src="./assets/icons/tree_sm.svg"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
         </div>
         <div className="tree1">
-            <img src="./assets/icons/tree_md.svg"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
         </div>
         <div className="tree2">
-            <img src="./assets/icons/tree_lg.svg"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_sm.svg"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_md.svg"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_lg.svg"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
         </div>
         <div className="tree1 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
         </div>
         <div className="tree1 d-none d-sm-block">
-            <img src="./assets/icons/tree_lg.svg"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
         </div>
         <div className="tree2">
-            <img src="./assets/icons/tree_sm.svg"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
         </div>
         <div className="tree3 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
         </div>
         <div className="tree2 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
         </div>
         <div className="tree d-none d-sm-block">
-            <img src="./assets/icons/tree_sm.svg"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
         </div>
     </div>
     <div className="footer">
@@ -62,7 +62,7 @@ const Footer = props => {
                         </div>
                         <div className="row justify-content-center my-3">
                             <div>
-                                <img id="ppbc_img" src="./assets/ppbc_logo.jpg"></img>
+                                <img id="ppbc_img" src="./assets/ppbc_logo.jpg" alt="PPBC Certification Level 1"></img>
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const Footer = props => {
                        
                     </div>
                     <div className="col-12 col-lg-6 my-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13456.07649118908!2d-84.41776522622241!3d43.41343622187014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88223700a836a093%3A0xa957406657c7ef83!2sPine%20Bark%20Boarding!5e0!3m2!1sen!2sus!4v1612041867683!5m2!1sen!2sus" width="100%" height="250vh"  aria-hidden="false" ></iframe>
+                        <iframe title="google map location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13456.07649118908!2d-84.41776522622241!3d43.41343622187014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88223700a836a093%3A0xa957406657c7ef83!2sPine%20Bark%20Boarding!5e0!3m2!1sen!2sus!4v1612041867683!5m2!1sen!2sus" width="100%" height="250vh"  aria-hidden="false" ></iframe>
                     </div>
             </div>
             <div className="row-fluid">
