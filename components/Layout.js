@@ -16,6 +16,8 @@ export default function Layout({ children, home, title }) {
     return (
         <>
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://maps.googleapis.com"/>
           <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
             integrity="Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous" />
@@ -31,7 +33,7 @@ export default function Layout({ children, home, title }) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
           <script rel="preload" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <title>{title} - { siteTitle }</title>
+          <title>{title} - { siteTitle }</title>
         </Head>
         <div className="mx-lg-5 site">
 

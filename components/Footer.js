@@ -12,40 +12,40 @@ const Footer = props => {
     <>
     <div className="tree-row">
         <div className="tree">
-            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree1">
-            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree2">
-            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree3">
-            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree1 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree1 d-none d-sm-block">
-            <img src="./assets/icons/tree_lg.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_lg.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree2">
-            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree3 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree2 d-none d-sm-block">
-            <img src="./assets/icons/tree_md.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_md.svg" alt="tree icon" loading="lazy"></img>
         </div>
         <div className="tree d-none d-sm-block">
-            <img src="./assets/icons/tree_sm.svg" alt="tree icon"></img>
+            <img src="./assets/icons/tree_sm.svg" alt="tree icon" loading="lazy"></img>
         </div>
     </div>
     <div className="footer">
@@ -62,7 +62,7 @@ const Footer = props => {
                         </div>
                         <div className="row justify-content-center my-3">
                             <div>
-                                <img id="ppbc_img" src="./assets/ppbc_logo.jpg" alt="PPBC Certification Level 1"></img>
+                                <img id="ppbc_img" src="./assets/ppbc_logo.jpg" alt="PPBC Certification Level 1" loading="lazy"></img>
                             </div>
                         </div>
                     </div>
