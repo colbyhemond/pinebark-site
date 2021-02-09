@@ -11,7 +11,6 @@ export default class Home extends Component {
       <>
         <Layout title={title}>
           <div className="container">
-          <a href="/thanks">thanks</a>
             <h1>{title}</h1>
             <div className="body d-flex justify-content-center">
               <ContactForm />
