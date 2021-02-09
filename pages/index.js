@@ -34,7 +34,7 @@ export default class Home extends Component {
             </div>
             <div className=" col-12 col-md-5">
               <div className="col-12 d-flex justify-content-center">
-                <Link href="/services/#boarding">
+                <Link href="/boarding">
                   <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
@@ -49,7 +49,7 @@ export default class Home extends Component {
                 </Link>
               </div>
               <div className="col-12 d-flex justify-content-center">
-                <Link href="/services/#grooming">
+                <Link href="/grooming">
                 <a className="no-dec">
                   <div className="icon">
                     <div className="col-3">
