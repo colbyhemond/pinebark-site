@@ -69,8 +69,7 @@ const Footer = props => {
                     <div className="col-12 col-sm-6 col-lg-3 my-3 mx-4 mx-sm-0" id="location">
                         <div className="row">
                             <p>Hours:<br/>
-                                Mon-Sat 8:00am - 6:00pm<br/>
-                                Sun 8:00am - 4:00pm</p>
+                                Mon-Sun 8:00am - 6:00pm</p>
                             </div>
                             
                         <div className="row">
