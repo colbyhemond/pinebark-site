@@ -12,7 +12,7 @@ import Social from './Social'
 export const siteTitle = 'Pine Bark Boarding'
 
 export default function Layout({ children, home, title }) {
-    let { siteDescription, socialmedia } = attributes
+    let { siteDescription, socialMedia, businessInfo } = attributes
     return (
         <>
         <Head>
@@ -48,16 +48,16 @@ export default function Layout({ children, home, title }) {
 
               </div> */}
               <div className="col-5 col-sm-4 col-md-4 order-1 order-md-2">
-                <a href="#location"><span className="d-none d-sm-inline">Located in </span>Wheeler, MI</a>
+                <a href="#location"><span className="d-none d-sm-inline">Located in </span>{businessInfo.city}, {businessInfo.state}</a>
               </div>
               <div className="col-12 col-sm-4 col-md-4 order-12 order-md-3 py-2">
-                <Social facebook={{url: socialmedia.facebook}}
-                        twitter={{url: socialmedia.twitter}}
-                        instagram={{url: socialmedia.instagram}}
+                <Social facebook={{url: socialMedia.facebook}}
+                        twitter={{url: socialMedia.twitter}}
+                        instagram={{url: socialMedia.instagram}}
                         />
               </div>
               <div className="col-7 col-sm-4 col-md-4 order-2 order-md-4">
-                <a href="tel:989-948-4714">(989) 948-4714</a>
+                <a href={`tel:${businessInfo.phone}`}>{businessInfo.phone}</a>
               </div>
               {/* <div className="col-md-1 order-md-5">
 

@@ -12,14 +12,14 @@ collections:
         file: content/settings.md
         fields:
           - label: "Social Media"
-            name: "socialmedia"
+            name: "socialMedia"
             widget: "object" 
             fields:
               - {label: "Facebook", name: "facebook", widget: string, required: false}
               - {label: "Twitter", name: "twitter", widget: string, required: false}
               - {label: "Instagram", name: "instagram", widget: string, required: false}
           - label: "Business Info"
-            name: "businessinfo"
+            name: "businessInfo"
             widget: "object" 
             fields:
               - {label: "Name", name: "name", widget: string, required: false}
@@ -29,6 +29,7 @@ collections:
               - {label: "State", name: "state", widget: string, required: true}
               - {label: "Zip Code", name: "zip", widget: string, required: true}
               - {label: "Phone", name: "phone", widget: string, required: false, pattern: ['((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}', "Must be in format (000) 000-0000"], hint: Format (000) 000-0000}
+              - {label: "Email", name: "email", widget: string, required: true}
   - name: pages
     label: Pages
     files:

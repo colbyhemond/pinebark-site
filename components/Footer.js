@@ -7,7 +7,7 @@ import Social from "./Social"
 import { attributes } from '../content/settings.md';
 
 const Footer = props => {
-    let { socialmedia } = attributes
+    let { socialMedia, businessInfo } = attributes
     return (
     <>
     <div className="tree-row">
@@ -54,9 +54,9 @@ const Footer = props => {
                     <div className="col-12 col-sm-6 col-lg-3 ">
                         <div className="row justify-content-center my-3">
                             <p>
-                            <Social dark facebook={{url: socialmedia.facebook}}
-                                         twitter={{url: socialmedia.twitter}}
-                                         instagram={{url: socialmedia.instagram}}
+                            <Social dark facebook={{url: socialMedia.facebook}}
+                                         twitter={{url: socialMedia.twitter}}
+                                         instagram={{url: socialMedia.instagram}}
                         />
                             </p>
                         </div>
@@ -74,18 +74,17 @@ const Footer = props => {
                             
                         <div className="row">
                             <address>
-                            <p>
-                                Pine Bark Boarding and Grooming<br/>
+                            <p>{businessInfo.name}<br/>
                          
-                            <a href="maps:https://maps.google.com/?q=8225+N+Woodbridge+Rd+Wheeler,+MI">8225 N Woodbridge Rd.<br/>
-                            Wheeler, MI 48662</a>
+                            <a href="maps:https://maps.google.com/?q=8225+N+Woodbridge+Rd+Wheeler,+MI">{businessInfo.address1}{businessInfo.address2}<br/>
+                            {businessInfo.city}, {businessInfo.state} {businessInfo.zip}</a>
                             </p>
                        
                             <p>
-                            <a href="tel:989-948-4714">(989) 948-4714</a>
+                            <a href={`tel:${businessInfo.phone}`}>{businessInfo.phone}</a>
                             </p>
                             <p>
-                            <a href="mail:pinebarkboarding@gmail.com">PineBarkBoarding@Gmail.com</a>
+                            <a href={`mail:${{businessInfo.email}}`}>{businessInfo.email}</a>
                             </p>
                             </address>
                         </div>
