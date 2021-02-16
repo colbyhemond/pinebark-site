@@ -37,6 +37,10 @@ On Request:
   - kills adult fleas (not a preventive)
 - Flea bath - $10
 
+<div className="flea-img">
+   <img src="./assets/flea_diagram.png"></img>
+</div>
+
 <br/>
 <br/>
 <br/>

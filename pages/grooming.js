@@ -44,6 +44,20 @@ export default class Home extends Component {
            
           </div>
         </Layout>
+        <style type="text/css"> {
+          `
+          .flea-img img {
+            display: flex;
+            margin: auto;
+            height: auto;
+            width: 100%;
+            max-width: 300px;
+            // border: 3px solid red;
+          }
+
+          `
+        }
+        </style>
       </>
     )
   }
