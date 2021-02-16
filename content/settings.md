@@ -6,11 +6,11 @@ socialmedia:
     instagram: '' }
 businessinfo:
   { name: https://www.facebook.com/PineBarkBoarding,
-    address1: '',
+    address1: '8225 N Woodbridge Rd.',
     address2: '',
-    city: '',
-    state: '',
-    zip: '',
-    phone: '' }
+    city: 'Wheeler',
+    state: 'MI',
+    zip: '48662',
+    phone: '(989) 948-4714' }
 ---
 

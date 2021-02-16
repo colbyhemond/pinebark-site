@@ -23,12 +23,12 @@ collections:
             widget: "object" 
             fields:
               - {label: "Name", name: "name", widget: string, required: false}
-              - {label: "Address Line 1", name: "address1", widget: string, required: false}
-              - {label: "Address Line 2", name: "address2", widget: string, required: false}
-              - {label: "City", name: "city", widget: string, required: false}
-              - {label: "State", name: "state", widget: string, required: false}
-              - {label: "Zip Code", name: "zip", widget: string, required: false}
-              - {label: "Phone", name: "phone", widget: string, required: false, pattern: [((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}, "Must be in format (000) 000-000"], hint: Please enter in format (000) 000-0000}
+              - {label: "Address Line 1", name: "address1", widget: string, required: true, hint: House Number and Street}
+              - {label: "Address Line 2", name: "address2", widget: string, required: false, hint: Apt/Unit/Suite Number}
+              - {label: "City", name: "city", widget: string, required: true}
+              - {label: "State", name: "state", widget: string, required: true}
+              - {label: "Zip Code", name: "zip", widget: string, required: true}
+              - {label: "Phone", name: "phone", widget: string, required: false, pattern: ['((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}', "Must be in format (000) 000-0000"], hint: Format (000) 000-0000}
   - name: pages
     label: Pages
     files:
