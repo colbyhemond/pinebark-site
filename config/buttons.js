@@ -11,8 +11,13 @@ const navButtons = [
     level: 1
   },
   {
-    label: "Services",
-    path: "/services",
+    label: "Boarding",
+    path: "/boarding",
+    level: 1
+  },
+  {
+    label: "Grooming",
+    path: "/grooming",
     level: 1
   },
   {
