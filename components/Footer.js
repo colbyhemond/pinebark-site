@@ -84,7 +84,7 @@ const Footer = props => {
                             <a href={`tel:${businessInfo.phone}`}>{businessInfo.phone}</a>
                             </p>
                             <p>
-                            <a href={`mail:${businessInfo.email}`}>{businessInfo.email}</a>
+                            <a href={`mailto:${businessInfo.email}`}>{businessInfo.email}</a>
                             </p>
                             </address>
                         </div>
