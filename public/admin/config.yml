@@ -81,14 +81,66 @@ collections:
         - { label: Title, name: title, required: false, widget: string}
         - { label: Body, name: body, required: false, widget: markdown}
         - { label: Services Button Text, name: servicesCTA, widget: string}
-        
-    - label: Services
-      name: services
-      file: content/services.md
+
+    - label: Boarding
+      name: boarding
+      file: content/boarding.md
       fields:
         - { label: Title, name: title, required: false, widget: string}
         - { label: Body, name: body, required: false, widget: markdown}
         - { label: FAQ Button Text, name: faqCTA, widget: string}
+        - label: Images
+          name: images
+          widget: object 
+          fields:
+            - label: Left Image
+              name: imgLeft
+              widget: object
+              fields:
+                - { label: Image, name: img, widget: image }
+                - { label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Middle Image
+              name: imgMiddle
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Right Image
+              name: imgRight
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
+
+    - label: Grooming
+      name: grooming
+      file: content/grooming.md
+      fields:
+        - { label: Title, name: title, required: false, widget: string}
+        - { label: Body, name: body, required: false, widget: markdown}
+        - { label: FAQ Button Text, name: faqCTA, widget: string}
+        - label: Images
+          name: images
+          widget: object 
+          fields:
+            - label: Left Image
+              name: imgLeft
+              widget: object
+              fields:
+                - { label: Image, name: img, widget: image }
+                - { label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Middle Image
+              name: imgMiddle
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
+            - label: Right Image
+              name: imgRight
+              widget: object
+              fields:
+                - {label: Image, name: img, widget: image}
+                - {label: Description, name: alt, widget: string, hint: very short generic description}
         
     - label: FAQ
       name: faq
