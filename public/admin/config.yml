@@ -118,7 +118,6 @@ collections:
       fields:
         - { label: Title, name: title, required: false, widget: string}
         - { label: Body, name: body, required: false, widget: markdown}
-        - { label: FAQ Button Text, name: faqCTA, widget: string}
         - label: Images
           name: images
           widget: object 
@@ -141,6 +140,7 @@ collections:
               fields:
                 - {label: Image, name: img, widget: image}
                 - {label: Description, name: alt, widget: string, hint: very short generic description}
+        - { label: FAQ Button Text, name: faqCTA, widget: string}
         
     - label: FAQ
       name: faq
@@ -161,4 +161,3 @@ collections:
       file: content/contact.md
       fields:
         - { label: Title, name: title, required: false, widget: string}
-        - { label: Message, name: message, widget: string}
