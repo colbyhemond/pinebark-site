@@ -32,7 +32,10 @@ export default function Layout({ children, home, title }) {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:image" content="/assets/images/opengraph_img.png" />
-          <meta name="og:title" content={siteTitle} />
+          <meta property="og:title" content={siteTitle} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://ch-pinebark.netlify.app" />
+          <meta property="og:description" content={siteDescription} />
           <meta name="twitter:card" content="summary_large_image" />
           <script rel="preload" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <title>{title} - { siteTitle }</title>
