@@ -22,36 +22,36 @@ const Social = props => {
       
       { (!props.dark) ?
                 ( (facebook.url !== ``) ? 
-                  <a href={facebook.url}>
+                  <a href={facebook.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/facebook.svg" alt="facebook"></img>
                   </a> 
                   : null )
                 : ( (facebook.url !== ``) ? 
-                  <a href={facebook.url}>
+                  <a href={facebook.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/facebook_white.svg" alt="facebook"></img>
                   </a> 
                   : null ) }
 
       { (!props.dark) ?
                 ( (twitter.url !== ``) ? 
-                  <a href={twitter.url}>
+                  <a href={twitter.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/twitter.svg" alt="twitter"></img>
                   </a> 
                   : null )
                 : ( (twitter.url !== ``) ? 
-                  <a href={twitter.url}>
+                  <a href={twitter.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/twitter_white.svg" alt="twitter"></img>
                   </a> 
                   : null ) }
 
       { (!props.dark) ?
                 ( (instagram.url !== ``) ? 
-                  <a href={instagram.url}>
+                  <a href={instagram.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/instagram.svg" alt="instagram"></img>
                   </a> 
                   : null )
                 : ( (instagram.url !== ``) ? 
-                  <a href={instagram.url}>
+                  <a href={instagram.url} target="_blank" rel="noreferrer noopener">
                       <img src="./assets/social/instagram_white.svg" alt="instagram"></img>
                   </a> 
                   : null ) }
